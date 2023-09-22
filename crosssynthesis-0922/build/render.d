@@ -1,5 +1,5 @@
-/root/Bela/projects/crosssynthesis-0921/build/render.o: \
-  /root/Bela/projects/crosssynthesis-0921/render.cpp include/Bela.h \
+/root/Bela/projects/crosssynthesis-0922/build/render.o: \
+  /root/Bela/projects/crosssynthesis-0922/render.cpp include/Bela.h \
   /usr/xenomai/include/cobalt/unistd.h \
   /usr/xenomai/include/cobalt/stdio.h include/GPIOcontrol.h \
   /usr/xenomai/include/cobalt/time.h include/Utilities.h \
@@ -10,7 +10,7 @@
   libraries/GuiController/GuiSlider.h libraries/Trill/Trill.h \
   include/I2c.h /usr/xenomai/include/cobalt/fcntl.h \
   /usr/xenomai/include/cobalt/sys/ioctl.h \
-  /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.h
+  /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.h
 
 include/Bela.h:
 
@@ -52,4 +52,4 @@ include/I2c.h:
 
 /usr/xenomai/include/cobalt/sys/ioctl.h:
 
-/root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.h:
+/root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.h:

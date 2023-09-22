@@ -1,11 +1,11 @@
-# 1 "/root/Bela/projects/crosssynthesis-0921/render.cpp"
+# 1 "/root/Bela/projects/crosssynthesis-0922/render.cpp"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 365 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
-# 14 "/root/Bela/projects/crosssynthesis-0921/render.cpp"
+# 1 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
+# 14 "/root/Bela/projects/crosssynthesis-0922/render.cpp"
 # 1 "./include/Bela.h" 1
 # 86 "./include/Bela.h"
 extern "C"
@@ -3660,7 +3660,7 @@ static inline unsigned int multiplexerChannelForFrame(BelaContext *context, int 
 
 
 }
-# 15 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 15 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "./libraries/Fft/Fft.h" 1
 
 # 1 "./libraries/ne10/NE10.h" 1
@@ -20929,7 +20929,7 @@ private:
  ne10_fft_r2c_cfg_float32_t cfg = nullptr;
  unsigned int length;
 };
-# 16 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 16 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "./libraries/Scope/Scope.h" 1
 
 
@@ -41027,7 +41027,7 @@ class Scope{
 
   std::map<std::wstring, float> settings;
 };
-# 17 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 17 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "./libraries/Gui/Gui.h" 1
 
 
@@ -41732,7 +41732,7 @@ int Gui::sendBuffer(unsigned int bufferId, T value)
  const char* type = typeid(T).name();
  return doSendBuffer(type, bufferId, (const void*)&value, sizeof(T));
 }
-# 18 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 18 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "./libraries/GuiController/GuiController.h" 1
 
 
@@ -41822,7 +41822,7 @@ class GuiController {
 
   static bool controlCallback(JSONObject &root, void* param);
 };
-# 19 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 19 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "./libraries/Trill/Trill.h" 1
 
 # 1 "./include/I2c.h" 1
@@ -42522,13 +42522,13 @@ class Trill : public I2c
 
 
 };
-# 20 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 20 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/cmath" 1 3
 # 40 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/cmath" 3
-# 21 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 21 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 # 1 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/cstring" 1 3
 # 40 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/cstring" 3
-# 22 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 22 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 
 # 1 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/algorithm" 1 3
 # 59 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/algorithm" 3
@@ -49013,9 +49013,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 # 63 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/algorithm" 2 3
-# 24 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
-# 1 "/root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.h" 1
-# 22 "/root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.h"
+# 24 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
+# 1 "/root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.h" 1
+# 22 "/root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.h"
 class MonoFilePlayer {
 public:
 
@@ -49045,7 +49045,7 @@ private:
  bool isPlaying_ = false;
 
 };
-# 25 "/root/Bela/projects/crosssynthesis-0921/render.cpp" 2
+# 25 "/root/Bela/projects/crosssynthesis-0922/render.cpp" 2
 
 
 
@@ -49074,7 +49074,7 @@ std::vector<float> gSynthesisWindowBuffer;
 
 
 std::string gFilenameMag = "theme.wav";
-std::string gFilenamePhi = "theme.wav";
+std::string gFilenamePhi = "voice.wav";
 
 
 MonoFilePlayer gPlayerMag;
@@ -49102,10 +49102,10 @@ float gTouchSize = 0.0;
 float gAmp = 0.0;
 
 
-std::vector<float> magInput;
-std::vector<float> phasInput;
-std::vector<float> outPutMag;
-std::vector<float> outPutPhi;
+std::vector<float> magInput(gFftSize);
+std::vector<float> phasInput(gFftSize);
+std::vector<float> outPutMag(gFftSize);
+std::vector<float> outPutPhi(gFftSize);
 
 
 void loop(void*) {
@@ -49154,6 +49154,7 @@ bool setup(BelaContext *context, void *userData)
 
  gFftMag.setup(gFftSize);
  gFftPhi.setup(gFftSize);
+ gFftRect.setup(gFftSize);
  gInputBufferMag.resize(gBufferSize);
  gInputBufferPhi.resize(gBufferSize);
  gOutputBuffer.resize(gBufferSize);
@@ -49170,7 +49171,7 @@ bool setup(BelaContext *context, void *userData)
 
   gSynthesisWindowBuffer[n] = 0.5f * (1.0f - cosf(2.0 * 3.14159265358979323846 * n / (float)(gFftSize - 1)));
  }
-# 160 "/root/Bela/projects/crosssynthesis-0921/render.cpp"
+# 161 "/root/Bela/projects/crosssynthesis-0922/render.cpp"
  gFftTask = Bela_createAuxiliaryTask(process_fft_background, 50, "bela-process-fft");
 
  return true;
@@ -49192,7 +49193,7 @@ void crosspec(std::vector<float>& magInput, std::vector<float>& phasInput, std::
  outPutMag[0] = magInput[0];
  outPutMag[1] = magInput[1];
 
- for(i = 2; i < fftSize; i+=2){
+ for(i = 2; i < fftSize; i++){
 
   mag = (float) sqrt(magInput[i] * magInput[i] + magInput[i+1]* magInput[i+1]);
 
@@ -49221,14 +49222,14 @@ void process_fft(std::vector<float> const& inBufferMag,std::vector<float> const&
  gFftMag.fft(unwrappedBufferMag);
  gFftPhi.fft(unwrappedBufferPhi);
 
- for(int i =0; i< gFftSize; i++){
+ for(int i = 0; i< gFftSize; i++){
   magInput[i] = gFftMag.fdr(i);
   phasInput[i] = gFftPhi.fdi(i);
  }
 
  crosspec(magInput, phasInput, outPutMag,outPutPhi, gFftSize);
  gFftRect.ifft(outPutMag, outPutPhi);
-# 230 "/root/Bela/projects/crosssynthesis-0921/render.cpp"
+# 231 "/root/Bela/projects/crosssynthesis-0922/render.cpp"
  for(int n = 0; n < gFftSize; n++) {
   int circularBufferIndex = (outPointer + n - gFftSize + gBufferSize) % gBufferSize;
   outBuffer[circularBufferIndex] += gFftRect.td(n) * gSynthesisWindowBuffer[n];

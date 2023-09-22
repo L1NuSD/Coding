@@ -19,7 +19,7 @@
 	.eabi_attribute	26, 2	@ Tag_ABI_enum_size
 	.eabi_attribute	14, 0	@ Tag_ABI_PCS_R9_use
 	.eabi_attribute	68, 1	@ Tag_Virtualization_use
-	.file	"/root/Bela/projects/crosssynthesis-0921/build/MonoFilePlayer.bc"
+	.file	"/root/Bela/projects/crosssynthesis-0922/build/MonoFilePlayer.bc"
 	.file	1 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/arm-linux-gnueabihf/c++/6.3.0/bits" "c++config.h"
 	.file	2 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/ext" "concurrence.h"
 	.file	3 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits" "alloc_traits.h"
@@ -54,8 +54,8 @@
 	.type	_ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb,%function
 _ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb: @ @_ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb
 .Lfunc_begin0:
-	.file	30 "/root/Bela/projects/crosssynthesis-0921" "MonoFilePlayer.cpp"
-	.loc	30 18 0                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:18:0
+	.file	30 "/root/Bela/projects/crosssynthesis-0922" "MonoFilePlayer.cpp"
+	.loc	30 18 0                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:18:0
 	.fnstart
 	.cfi_startproc
 @ BB#0:
@@ -91,11 +91,11 @@ _ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb: 
 	vst1.32	{d16, d17}, [r0]!
 	strh	r5, [r0]
 .Ltmp11:
-	.loc	30 26 13                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:26:13
+	.loc	30 26 13                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:26:13
 	strb	r3, [r4, #17]
-	.loc	30 27 8                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:27:8
+	.loc	30 27 8                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:27:8
 	strb	r2, [r0]
-	.loc	30 30 18 discriminator 1 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:30:18
+	.loc	30 30 18 discriminator 1 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:30:18
 .Ltmp0:
 	add	r0, sp, #4
 .Ltmp12:
@@ -176,14 +176,14 @@ _ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb: 
 	.loc	8 558 45                @ /usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits/stl_vector.h:558:45
 	ldm	r4, {r0, r1}
 .Ltmp25:
-	.loc	30 33 5                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:33:5
+	.loc	30 33 5                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:33:5
 	cmp	r0, r1
 .Ltmp26:
-	.loc	30 34 14                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:34:14
+	.loc	30 34 14                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:34:14
 	moveq	r0, #0
 	strbeq	r0, [r4, #17]
 .Ltmp27:
-	.loc	30 20 1                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:20:1
+	.loc	30 20 1                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:20:1
 	mov	r0, r4
 	sub	sp, r11, #8
 	pop	{r4, r5, r11, pc}
@@ -222,7 +222,7 @@ _ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb: 
 .Lfunc_end0:
 	.size	_ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb, .Lfunc_end0-_ZN14MonoFilePlayerC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb
 	.cfi_endproc
-	.file	32 "/root/Bela/projects/crosssynthesis-0921" "MonoFilePlayer.h"
+	.file	32 "/root/Bela/projects/crosssynthesis-0922" "MonoFilePlayer.h"
 	.file	33 "/usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits" "stringfwd.h"
 	.globl	__gxx_personality_v0
 	.personality __gxx_personality_v0
@@ -251,7 +251,7 @@ GCC_except_table0:
 	.type	_ZN14MonoFilePlayer5setupERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb,%function
 _ZN14MonoFilePlayer5setupERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb: @ @_ZN14MonoFilePlayer5setupERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEbb
 .Lfunc_begin1:
-	.loc	30 24 0                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:24:0
+	.loc	30 24 0                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:24:0
 	.fnstart
 	.cfi_startproc
 @ BB#0:
@@ -287,13 +287,13 @@ _ZN14MonoFilePlayer5setupERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 	@DEBUG_VALUE: operator=:__x <- %R0
 	mov	r5, #0
 .Ltmp41:
-	.loc	30 25 15 prologue_end   @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:25:15
+	.loc	30 25 15 prologue_end   @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:25:15
 	str	r5, [r4, #12]
-	.loc	30 26 13                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:26:13
+	.loc	30 26 13                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:26:13
 	strb	r3, [r4, #17]
-	.loc	30 27 8                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:27:8
+	.loc	30 27 8                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:27:8
 	strb	r2, [r4, #16]
-	.loc	30 30 18 discriminator 1 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:30:18
+	.loc	30 30 18 discriminator 1 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:30:18
 	bl	_ZN18AudioFileUtilities8loadMonoERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 .Ltmp42:
 	.loc	31 191 13               @ /usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits/move.h:191:13
@@ -360,14 +360,14 @@ _ZN14MonoFilePlayer5setupERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 	ldm	r4, {r1, r2}
 	mov	r0, #1
 .Ltmp53:
-	.loc	30 33 5                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:33:5
+	.loc	30 33 5                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:33:5
 	cmp	r1, r2
 	moveq	r0, #0
 .Ltmp54:
-	.loc	30 34 14                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:34:14
+	.loc	30 34 14                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:34:14
 	strbeq	r0, [r4, #17]
 .Ltmp55:
-	.loc	30 39 1                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:39:1
+	.loc	30 39 1                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:39:1
 	sub	sp, r11, #8
 	pop	{r4, r5, r11, pc}
 .Ltmp56:
@@ -381,7 +381,7 @@ _ZN14MonoFilePlayer5setupERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 	.type	_ZN14MonoFilePlayer7triggerEv,%function
 _ZN14MonoFilePlayer7triggerEv:          @ @_ZN14MonoFilePlayer7triggerEv
 .Lfunc_begin2:
-	.loc	30 43 0                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:43:0
+	.loc	30 43 0                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:43:0
 	.fnstart
 	.cfi_startproc
 @ BB#0:
@@ -389,15 +389,15 @@ _ZN14MonoFilePlayer7triggerEv:          @ @_ZN14MonoFilePlayer7triggerEv
 	.loc	8 558 45 prologue_end   @ /usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits/stl_vector.h:558:45
 	ldm	r0, {r1, r2}
 .Ltmp57:
-	.loc	30 44 5                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:44:5
+	.loc	30 44 5                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:44:5
 	cmp	r1, r2
 	movne	r1, #0
-	.loc	30 46 15                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:46:15
+	.loc	30 46 15                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:46:15
 	strne	r1, [r0, #12]
-	.loc	30 47 13                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:47:13
+	.loc	30 47 13                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:47:13
 	movne	r1, #1
 	strbne	r1, [r0, #17]
-	.loc	30 48 1 discriminator 1 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:48:1
+	.loc	30 48 1 discriminator 1 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:48:1
 	bx	lr
 .Ltmp58:
 .Lfunc_end2:
@@ -410,20 +410,20 @@ _ZN14MonoFilePlayer7triggerEv:          @ @_ZN14MonoFilePlayer7triggerEv
 	.type	_ZN14MonoFilePlayer7processEv,%function
 _ZN14MonoFilePlayer7processEv:          @ @_ZN14MonoFilePlayer7processEv
 .Lfunc_begin3:
-	.loc	30 52 0                 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:52:0
+	.loc	30 52 0                 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:52:0
 	.fnstart
 	.cfi_startproc
 @ BB#0:
 	@DEBUG_VALUE: process:this <- %R0
-	.loc	30 53 6 prologue_end    @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:53:6
+	.loc	30 53 6 prologue_end    @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:53:6
 	ldrb	r1, [r0, #17]
 .Ltmp59:
-	.loc	30 53 5 is_stmt 0       @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:53:5
+	.loc	30 53 5 is_stmt 0       @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:53:5
 	cmp	r1, #0
 	beq	.LBB3_4
 @ BB#1:
 	@DEBUG_VALUE: process:this <- %R0
-	.loc	30 57 28 is_stmt 1      @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:57:28
+	.loc	30 57 28 is_stmt 1      @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:57:28
 	ldr	r2, [r0, #12]
 .Ltmp60:
 	@DEBUG_VALUE: operator[]:__n <- %R2
@@ -432,14 +432,14 @@ _ZN14MonoFilePlayer7processEv:          @ @_ZN14MonoFilePlayer7processEv
 	.loc	8 781 41 is_stmt 0      @ /usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits/stl_vector.h:781:41
 	add	r3, r1, r2, lsl #2
 .Ltmp61:
-	.loc	30 60 17 is_stmt 1      @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:60:17
+	.loc	30 60 17 is_stmt 1      @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:60:17
 	add	r2, r2, #1
 .Ltmp62:
-	.loc	30 57 14                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:57:14
+	.loc	30 57 14                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:57:14
 	vldr	s0, [r3]
 .Ltmp63:
 	@DEBUG_VALUE: process:out <- %S0
-	.loc	30 60 17                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:60:17
+	.loc	30 60 17                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:60:17
 	str	r2, [r0, #12]
 .Ltmp64:
 	.loc	8 656 40                @ /usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits/stl_vector.h:656:40
@@ -447,7 +447,7 @@ _ZN14MonoFilePlayer7processEv:          @ @_ZN14MonoFilePlayer7processEv
 	.loc	8 656 50 is_stmt 0      @ /usr/bin/../lib/gcc/arm-linux-gnueabihf/6.3.0/../../../../include/c++/6.3.0/bits/stl_vector.h:656:50
 	sub	r1, r3, r1
 .Ltmp65:
-	.loc	30 63 8 is_stmt 1       @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:63:8
+	.loc	30 63 8 is_stmt 1       @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:63:8
 	cmp	r2, r1, asr #2
 	blo	.LBB3_3
 .Ltmp66:
@@ -456,22 +456,22 @@ _ZN14MonoFilePlayer7processEv:          @ @_ZN14MonoFilePlayer7processEv
 	@DEBUG_VALUE: process:this <- %R0
 	mov	r1, #0
 .Ltmp67:
-	.loc	30 64 20                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:64:20
+	.loc	30 64 20                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:64:20
 	str	r1, [r0, #12]
 .Ltmp68:
-	.loc	30 65 11                @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:65:11
+	.loc	30 65 11                @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:65:11
 	ldrb	r2, [r0, #16]
 .Ltmp69:
-	.loc	30 65 10 is_stmt 0      @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:65:10
+	.loc	30 65 10 is_stmt 0      @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:65:10
 	cmp	r2, #0
 .Ltmp70:
-	.loc	30 66 19 is_stmt 1      @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:66:19
+	.loc	30 66 19 is_stmt 1      @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:66:19
 	strbeq	r1, [r0, #17]
 .Ltmp71:
 .LBB3_3:
 	@DEBUG_VALUE: process:out <- %S0
 	@DEBUG_VALUE: process:this <- %R0
-	.loc	30 70 1 discriminator 1 @ /root/Bela/projects/crosssynthesis-0921/MonoFilePlayer.cpp:70:1
+	.loc	30 70 1 discriminator 1 @ /root/Bela/projects/crosssynthesis-0922/MonoFilePlayer.cpp:70:1
                                         @ kill: %S0<def> %S0<kill> %D0<kill>
 .Ltmp72:
 	bx	lr
@@ -490,7 +490,7 @@ _ZN14MonoFilePlayer7processEv:          @ @_ZN14MonoFilePlayer7processEv
 .Linfo_string0:
 	.asciz	"clang version 3.9.1-9 (tags/RELEASE_391/rc2)" @ string offset=0
 .Linfo_string1:
-	.asciz	"/root/Bela/projects/crosssynthesis-0921/build/MonoFilePlayer.cpp" @ string offset=45
+	.asciz	"/root/Bela/projects/crosssynthesis-0922/build/MonoFilePlayer.cpp" @ string offset=45
 .Linfo_string2:
 	.asciz	"/root/Bela"            @ string offset=110
 .Linfo_string3:

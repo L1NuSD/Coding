@@ -50,7 +50,7 @@ std::vector<float> gSynthesisWindowBuffer;
 
 // Name of the sound file (in project folder)
 std::string gFilenameMag = "theme.wav"; 
-std::string gFilenamePhi = "theme.wav"; 
+std::string gFilenamePhi = "voice.wav"; 
 
 // Object that handles playing sound from a buffer
 MonoFilePlayer gPlayerMag;
@@ -78,10 +78,10 @@ float gTouchSize = 0.0; // Touch size
 float gAmp = 0.0; 
 
 //
-std::vector<float> magInput;
-std::vector<float> phasInput;
-std::vector<float> outPutMag;
-std::vector<float> outPutPhi;
+std::vector<float> magInput(gFftSize);
+std::vector<float> phasInput(gFftSize);
+std::vector<float> outPutMag(gFftSize);
+std::vector<float> outPutPhi(gFftSize);
 
 
 void loop(void*) {
@@ -130,6 +130,7 @@ bool setup(BelaContext *context, void *userData)
 	// Set up the FFT and its buffers
 	gFftMag.setup(gFftSize);
 	gFftPhi.setup(gFftSize);
+	gFftRect.setup(gFftSize);
 	gInputBufferMag.resize(gBufferSize);
 	gInputBufferPhi.resize(gBufferSize);
 	gOutputBuffer.resize(gBufferSize);
@@ -178,7 +179,7 @@ void crosspec(std::vector<float>& magInput, std::vector<float>& phasInput, std::
 	outPutMag[0] = magInput[0];
 	outPutMag[1] = magInput[1];
 	
-	for(i = 2; i < fftSize; i+=2){
+	for(i = 2; i < fftSize; i++){
 		//get the magnitudes if one input
 		mag = (float) sqrt(magInput[i] * magInput[i] + magInput[i+1]* magInput[i+1]);
 		//get the phase of the other
@@ -207,7 +208,7 @@ void process_fft(std::vector<float> const& inBufferMag,std::vector<float> const&
 	gFftMag.fft(unwrappedBufferMag);
 	gFftPhi.fft(unwrappedBufferPhi);
 	
-	for(int i =0; i< gFftSize; i++){
+	for(int i = 0; i< gFftSize; i++){
 		magInput[i] = gFftMag.fdr(i);
 		phasInput[i] = gFftPhi.fdi(i);
 	}
