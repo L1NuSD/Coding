@@ -1,0 +1,10 @@
+-include libraries/AudioFile/build/Makefile.link
+-include libraries/Fft/build/Makefile.link
+-include libraries/Gui/build/Makefile.link
+-include libraries/GuiController/build/Makefile.link
+-include libraries/Scope/build/Makefile.link
+-include libraries/Trill/build/Makefile.link
+-include libraries/WSServer/build/Makefile.link
+-include libraries/math_neon/build/Makefile.link
+-include libraries/ne10/build/Makefile.link
+-include libraries/sndfile/build/Makefile.link
